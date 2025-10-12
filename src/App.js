@@ -2,19 +2,19 @@ const initialFriends = [
   {
     id: 118836,
     name: "Mamad",
-    image: "https://i.pravatar.cc/48?u=118836",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/93/Mohammad_Reza_Golzar_13960427001216636359829477667254_65485.jpg",
     balance: -7,
   },
   {
     id: 933372,
     name: "AliReza",
-    image: "https://i.pravatar.cc/48?u=933372",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/5b/Alireza_Jahanbakhsh_at_Tasnim_News_Agency_02.jpg",
     balance: 20,
   },
   {
-    id: 499476,
+    id: 499476, 
     name: "Amir",
-    image: "https://i.pravatar.cc/48?u=499476",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Amir_Abedzadeh_in_Iran_national_football_team.jpg",
     balance: 0,
   },
 ];
@@ -81,6 +81,25 @@ function FormSplitBill({friend}) {
   return(
     <form className="form-split-bill">
       <h2>Split a bill with asghar</h2>
+
+      <label>💵 Bill Value</label>
+      <input type="text"></input>
+
+      <label>🔴Your expense</label>
+      <input type="text"></input>
+
+      <label>🔴Asghars expense</label>
+      <input type="text" disabled></input>
+
+      <label>✔Who is payin the bill?</label>
+      <select>
+        <option value="user">you</option>
+        <option value="friend">asghar</option>
+      </select>
+
+
+      <Button>Split</Button>
+
     </form>
   );
 };
